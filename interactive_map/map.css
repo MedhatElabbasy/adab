@@ -1,0 +1,96 @@
+/* variables */
+:root {
+    --main-color: #F3EAC8;
+}
+
+/* ===========GLOBAL STYLE========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color) !important;
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* ================================ */
+
+.map-container {
+    width: 95%;
+    margin: 100px auto;
+}
+
+.map-container svg {
+    width: 100%;
+
+}
+
+.map-container path {
+    transition: fill .1s linear
+}
+
+.map-container path[fill='#f54224']:hover {
+    fill: #d22000;
+    stroke: black;
+}
+
+.map-container path[fill="#5f84a8"]:hover {
+    fill: #294969;
+    stroke: #5f84a8;
+}
+
+
+.card-container {
+transition: all 1s;
+    width: 350px;
+    padding: 3px 10px;
+    border: 3.5px solid white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: var(--main-color);
+
+}
+
+.card-container::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    border-bottom: 3.5px solid white;
+    border-right: 3.5px solid white;
+    background-color: var(--main-color);
+    z-index: 0;
+}
+
+.card-container span {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.card-container p {
+    margin-top: 10px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.card-container img {
+
+    margin-right: 230px;
+}
+
+.x-mark {
+    cursor: pointer;
+}
