@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/description.css">
-    <link rel="stylesheet" href="css/card.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/card.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
-        rel="stylesheet" />
-    <title>footerone</title>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Authors</title>
+  </head>
 
-<body>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="text-foot text-center ">
-                    <h2>بعض من كتب
-                    </h2>
-                    <p >محمد العبودي في الرحلات</p>
-                </div>
-                <div class="text-des">
-                    <p>فى جنوب الهند</p>
-                    <p>رحلات فى امريكا الوسطى (المكسيك/بنما/كوستاريكا)</p>
-                    <p>فى شرق البرازيل</p>
-                    <p>نظرة الى..الوجه الاخر من الارض</p>
-                    <p>من روسيا البيضاء الى روسيا الحمراء</p>
-                    <p>جولة خاطفه فى جمهورية الموز (هندوراس/نيكارقوا/كوستاريكا)</p>
-                    <p>على أرض القهوه العربية</p>
-                </div>
-                <div class="img-des text-center">
-                    <img src="imgs/Group 105.svg" alt="">
-                </div>
-                <div class="allgo">
-                
-                    <div class="gomap" onclick="window.location.href='./interactive_map/map.html' ">
-                        <img src="imgs/Group 99.svg" alt="">
-                        <p class="mt-2">اذهب للخريطة</p>
-                
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
+  <body>
+    <div class="nav-container">
+      <img src="../imgs/navbar.svg" />
     </div>
 
-
-    <script></script>
-</body>
-
+    <div class="container authors-container mt-5 p-4">
+      <div class="row">
+        <div class="text-foot text-center">
+          <h2>بعض من كتب</h2>
+          <p>محمد العبودي في الرحلات</p>
+        </div>
+        <div class="text-des">
+          <p>فى جنوب الهند</p>
+          <p>رحلات فى امريكا الوسطى (المكسيك/بنما/كوستاريكا)</p>
+          <p>فى شرق البرازيل</p>
+          <p>نظرة الى..الوجه الاخر من الارض</p>
+          <p>من روسيا البيضاء الى روسيا الحمراء</p>
+          <p>جولة خاطفه فى جمهورية الموز (هندوراس/نيكارقوا/كوستاريكا)</p>
+          <p>على أرض القهوه العربية</p>
+        </div>
+        <div class="img-des text-center">
+          <img src="imgs/Group 105.svg" alt="" />
+        </div>
+        <!-- =================================================== routing =================================================== -->
+        <div class="routing-container">
+          <div
+            class="home-routing-container"
+            onclick="window.location.href='./index.html' "
+          >
+            <p class="mt-2">العوده للصفحة الرئيسة</p>
+          </div>
+          <div
+            class="img-routing-container"
+            onclick="window.location.href='./interactive_map/map.html' "
+          >
+            <p class="mt-2">الرجوع للصفحه السابقه</p>
+            <img src="imgs/Group 99.svg" alt=""  style="transform: rotate(180deg);"/>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

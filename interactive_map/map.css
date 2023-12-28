@@ -12,40 +12,55 @@
 }
 
 body {
-    background-color: var(--main-color) !important;
+    background-color: #f54224 !important;
     direction: rtl;
     font-family: 'Tajawal', sans-serif !important;
 }
 
 /* ================================ */
-
-.map-container {
-    width: 95%;
-    margin: 100px auto;
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.map-container svg {
-    width: 100%;
+.saudi-map-container,
+.map-container {
+    width: 95%;
+    margin: 60px auto;
+    width: 95%;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 20px 0;
+}
 
+
+
+.map-container svg,
+.saudi-map-container svg {
+    width: 100%;
 }
 
 .map-container path {
     transition: fill .1s linear
 }
 
-.map-container path[fill='#f54224']:hover {
+.map-container path[fill='#f54224']:hover,
+.saudi-map-container path[fill='#f54224']:hover {
     fill: #d22000;
     stroke: black;
 }
 
-.map-container path[fill="#5f84a8"]:hover {
+.map-container path[fill="#5f84a8"]:hover,
+.saudi-map-container path[fill="#5f84a8"]:hover {
     fill: #294969;
     stroke: #5f84a8;
 }
 
 
+
 .card-container {
-transition: all 1s;
+    transition: all 1s;
     width: 350px;
     padding: 3px 10px;
     border: 3.5px solid white;
@@ -94,11 +109,12 @@ transition: all 1s;
 .x-mark {
     cursor: pointer;
 }
-.back{
+
+.back {
     text-align: center;
     margin-bottom: 25px;
-   
-   
+
+
 }
 
 
@@ -108,4 +124,22 @@ transition: all 1s;
     color: white;
     padding: 5px;
     border-radius: 6px;
+}
+
+/* routing styling */
+.routing-container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.img-routing-container {
+    display: flex;
+    justify-content: space-around   ;
+    cursor: pointer;
+    align-items: center;
 }
