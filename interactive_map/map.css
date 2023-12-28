@@ -23,22 +23,35 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
+.nav-img {
+  max-width: 100%;
+  height: auto;
+}
 .saudi-map-container,
 .map-container {
   width: 95%;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   width: 95%;
   background-color: var(--main-color);
   border-radius: 30px;
   padding: 20px 0;
 }
-
+@media screen and (max-width : 767px) {
+  .saudi-map-container,
+.map-container {
+  margin: 120px auto 0 auto;
+}
+}
 .map-container svg,
 .saudi-map-container svg {
   width: 100%;
 }
-
+@media screen and (max-width : 797px) {
+  .map-container svg,
+.saudi-map-container svg {
+  height: 450px;
+}
+}
 .map-container path {
   transition: fill 0.1s linear;
 }
@@ -117,21 +130,22 @@ body {
 
 /* routing styling */
 .routing-container {
-  padding: 0 30px;
+  /* 
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   direction: ltr !important;
-  font-size: 14px !important;
-  font-weight: 600;
+  padding: 0 30px;
+  /* font-size: 14px !important;
+  font-weight: 600; */
 }
 
 .img-routing-container {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   cursor: pointer;
-  align-items: center;
-  gap: 16px;
+  /* align-items: center;
+  gap: 16px; */
 }
 
 .img-routing-container img {

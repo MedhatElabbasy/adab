@@ -33,9 +33,13 @@
 </head>
 
 <body>
-  <div class="nav-container">
-    <img src="../imgs/navbar.svg" />
-  </div>
+   <div class="container overflow-hidden">
+      <div class="m-0 p-0 row justify-content-center">
+        <div class="col-12 col-md-6 m-0 p-0">
+          <img src="../imgs/navbar.svg" class="nav-img" />
+        </div>
+      </div>
+    </div>
   <div class="map-container">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1150" height="700"
       viewBox="0 0 2325.296 1047.815">
@@ -3799,13 +3803,13 @@
 
 
     <!-- =================================================== routing =================================================== -->
-    <div class="routing-container">
-      <div class="img-routing-container" onclick="window.location.href='../footertwo.html' ">
+    <div class="routing-container d-flex justify-content-between align-items-center flex-column flex-md-row mt-2 mt-md-0 ">
+      <div  class="img-routing-container d-flex align-items-center gap-2" onclick="window.location.href='../footertwo.html' ">
         <img src="../imgs/Group 99.svg" alt="" />
-        <p class="mt-2">اذهب للمؤلفات</p>
+        <p class="m-0 p-0 fw-bolder fs-5">اذهب للمؤلفات</p>
       </div>
-      <div class="img-routing-container" onclick="window.location.href='../descrption.html' ">
-        <p class="mt-2">الرجوع للصفحه السابقه</p>
+      <div  class="img-routing-container d-flex align-items-center gap-2" onclick="window.location.href='../descrption.html' ">
+        <p class="m-0 p-0 fw-bolder fs-5">الرجوع للصفحة السابقة</p>
         <img src="../imgs/Group 99.svg" alt="" style="transform: rotate(180deg);" />
       </div>
     </div>

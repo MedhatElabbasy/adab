@@ -8,12 +8,19 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
+.nav-img {
+  max-width: 100%;
+  height: auto;
+}
 .authors-container {
   border-radius: 30px;
   background-color: #f3eac8;
 }
-
+@media screen and (max-width : 767px) {
+  .authors-container {
+    margin-top: 120px !important;
+  }
+}
 .text-foot div {
   color: #f54224;
   font-size: 30px;
@@ -40,12 +47,12 @@ body {
 }
 
 .text-des {
-  display: flex;
-  align-items: end;
-  margin-top: 22px;
+  /* display: flex;
+  align-items: end; */
+  margin-top: 18px;
   color: #0b090a;
   font-size: 26px;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .text-dess {
@@ -79,7 +86,7 @@ body {
 
   .img-des img {
     width: 25% !important;
-    margin-top: 79px;
+    /* margin-top: 79px; */
   }
 
   .gomaps img {
@@ -112,21 +119,21 @@ body {
 
 /* routing styling */
 .routing-container {
-  padding: 0 30px;
+  /* padding: 0 30px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   direction: ltr !important;
-  font-size: 14px;
-  font-weight: 600;
+  /* font-size: 14px; */
+  /* font-weight: 600; */
 }
 
 .img-routing-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
   cursor: pointer;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .home-routing-container {
@@ -139,4 +146,7 @@ body {
 
 .img-routing-container img {
   width: 70px;
+}
+.fw500 {
+  font-weight: 500;
 }
