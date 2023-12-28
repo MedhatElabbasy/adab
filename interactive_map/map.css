@@ -1,145 +1,139 @@
 /* variables */
 :root {
-    --main-color: #F3EAC8;
+  --main-color: #f3eac8;
 }
 
 /* ===========GLOBAL STYLE========== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f54224 !important;
-    direction: rtl;
-    font-family: 'Tajawal', sans-serif !important;
+  background-color: #f54224 !important;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif !important;
 }
 
 /* ================================ */
 .nav-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .saudi-map-container,
 .map-container {
-    width: 95%;
-    margin: 60px auto;
-    width: 95%;
-    background-color: var(--main-color);
-    border-radius: 30px;
-    padding: 20px 0;
+  width: 95%;
+  margin: 60px auto;
+  width: 95%;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  padding: 20px 0;
 }
-
-
 
 .map-container svg,
 .saudi-map-container svg {
-    width: 100%;
+  width: 100%;
 }
 
 .map-container path {
-    transition: fill .1s linear
+  transition: fill 0.1s linear;
 }
 
 .map-container path[fill='#f54224']:hover,
 .saudi-map-container path[fill='#f54224']:hover {
-    fill: #d22000;
-    stroke: black;
+  fill: #d22000;
+  stroke: black;
 }
 
-.map-container path[fill="#5f84a8"]:hover,
-.saudi-map-container path[fill="#5f84a8"]:hover {
-    fill: #294969;
-    stroke: #5f84a8;
+.map-container path[fill='#5f84a8']:hover,
+.saudi-map-container path[fill='#5f84a8']:hover {
+  fill: #294969;
+  stroke: #5f84a8;
 }
-
-
 
 .card-container {
-    transition: all 1s;
-    width: 350px;
-    padding: 3px 10px;
-    border: 3.5px solid white;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    background-color: var(--main-color);
-
+  transition: all 1s;
+  width: 350px;
+  padding: 3px 10px;
+  border: 3.5px solid white;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  background-color: var(--main-color);
 }
 
 .card-container::after {
-    content: "";
-    position: absolute;
-    bottom: -23px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 40px;
-    height: 40px;
-    border-bottom: 3.5px solid white;
-    border-right: 3.5px solid white;
-    background-color: var(--main-color);
-    z-index: 0;
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 40px;
+  height: 40px;
+  border-bottom: 3.5px solid white;
+  border-right: 3.5px solid white;
+  background-color: var(--main-color);
+  z-index: 0;
 }
 
 .card-container span {
-    font-size: 20px;
-    font-weight: 600;
-
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .card-container p {
-    margin-top: 10px;
-    line-height: 22px;
-    font-weight: 500;
-    font-size: 15px;
-
+  margin-top: 10px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .card-container img {
-
-    margin-right: 230px;
+  margin-right: 230px;
 }
 
 .x-mark {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .back {
-    text-align: center;
-    margin-bottom: 25px;
-
-
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-
 .back button {
-    border: none;
-    background-color: #d22000;
-    color: white;
-    padding: 5px;
-    border-radius: 6px;
+  border: none;
+  background-color: #d22000;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
 }
 
 /* routing styling */
 .routing-container {
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    direction: ltr !important;
-    font-size: 20px;
-    font-weight: 600;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  direction: ltr !important;
+  font-size: 14px !important;
+  font-weight: 600;
 }
 
 .img-routing-container {
-    display: flex;
-    justify-content: space-around   ;
-    cursor: pointer;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-routing-container img {
+  width: 70px;
 }

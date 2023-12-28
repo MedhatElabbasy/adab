@@ -1,6 +1,6 @@
 body {
   background-color: #f54224 !important;
-  font-family: "Tajawal", sans-serif !important;
+  font-family: 'Tajawal', sans-serif !important;
 }
 
 .nav-container {
@@ -12,8 +12,6 @@ body {
 .desc-container {
   background-color: #f3eac8;
   border-radius: 30px;
-
-
 }
 
 .text-host {
@@ -85,7 +83,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 /* start page header */
@@ -123,27 +120,12 @@ body {
   height: 430px;
 }
 
-
-
 .headetwo-img img {
   width: 25%;
 }
 
 /* routing styling */
-.routing-container {
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  direction: ltr !important;
-  font-size: 20px;
-  font-weight: 600;
-}
 
-.img-routing-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-
+.img-routing-container img {
+  width: 70px;
 }
