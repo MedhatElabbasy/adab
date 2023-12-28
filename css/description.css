@@ -41,7 +41,31 @@ body {
   cursor: pointer;
 }
 .gomap img {
-  width: 8%;
+   width:15%;
+}
+.gomaps {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 17px;
+  cursor: pointer;
+  margin-top: -14px;
+}
+.gomaps p{
+font-size: 20px;
+}
+.gomap p{
+font-size: 20px;
+}
+.gomaps img {
+  width: 23%;
+}
+.allgo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 /* start page header */

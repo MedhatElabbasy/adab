@@ -72,7 +72,7 @@ data.forEach((item) => {
 
 function showPopup(event, message) {
   const offsetX = -180;
-  const offsetY = -230;
+  const offsetY = -200;
 
   const mouseX = event.clientX + window.pageXOffset;
   const mouseY = event.clientY + window.pageYOffset;

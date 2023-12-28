@@ -94,3 +94,18 @@ transition: all 1s;
 .x-mark {
     cursor: pointer;
 }
+.back{
+    text-align: center;
+    margin-bottom: 25px;
+   
+   
+}
+
+
+.back button {
+    border: none;
+    background-color: #d22000;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+}

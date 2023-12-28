@@ -1,70 +1,105 @@
-body{
+body {
     background-color: #f3eac8;
-        font-family: 'Tajawal', sans-serif !important;
+    font-family: 'Tajawal', sans-serif !important;
 
 }
-.footer{
-   padding: 30px 0;
+
+.footer {
+    padding: 30px 0;
 }
-.text-foot div{
-     color: #F54224;
+
+.text-foot div {
+    color: #F54224;
     font-size: 30px;
     font-weight: 500;
 }
-.text-foot h2{
+
+.text-foot h2 {
     color: #F54224;
     font-size: 35px;
 }
-.text-foot p{
+
+.text-foot p {
     color: #F54224;
-   font-size: 31px;
+    font-size: 31px;
     line-height: 39px;
 }
+
 @media (max-width:477px) {
-    .text-foot p{
+    .text-foot p {
         font-size: 27px;
         margin-bottom: 38px;
     }
 }
-.text-des{
-   display: flex;
+
+.text-des {
+    display: flex;
     align-items: end;
     margin-top: 22px;
     color: #0B090A;
     font-size: 26px;
     flex-direction: column;
-   
+
 }
-.text-dess{
-   display: flex;
+
+.text-dess {
+    display: flex;
     align-items: end;
     margin-top: -15px;
     color: #0B090A;
     font-size: 26px;
     flex-direction: column;
 }
+
 @media (max-width:477px) {
-    .text-des{
+    .text-des {
         font-size: 13px;
         font-weight: 500;
     }
-    .med{
+
+    .med {
         font-size: 25px;
     }
-    .text-dess{
+
+    .text-dess {
         font-size: 16px;
         font-weight: 500;
     }
-    .text-dess .div{
+
+    .text-dess .div {
         font-size: 25px;
         font-weight: 500;
     }
+
     .img-des img {
-    width: 25% !important;
-    margin-top: 79px;
+        width: 25% !important;
+        margin-top: 79px;
+    }
+
+    .gomaps img {
+        width: 13% !important;
+    }
 }
-}
-.img-des img{
-   width: 13%;
+
+.img-des img {
+    width: 13%;
     margin-top: 79px
+}
+
+.gomaps {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.gomaps p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gomaps img {
+    width: 6%;
 }
