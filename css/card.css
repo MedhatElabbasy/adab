@@ -1,6 +1,18 @@
+  @font-face {
+  font-family: 'mayadenFont';
+  src: url('../fonts/4_F5.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mayadenFont-bold';
+  src: url('../fonts/riyad-bank-Bold.ttf') format('truetype');
+   font-weight: bold;
+  font-style: normal;
+}
 body {
   background-color: #f54224;
-  font-family: 'Tajawal', sans-serif !important;
+  font-family: 'mayadenFont' !important;
 }
 
 .nav-container {
